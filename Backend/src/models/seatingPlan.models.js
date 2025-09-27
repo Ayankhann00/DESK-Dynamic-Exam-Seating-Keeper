@@ -12,10 +12,11 @@ const SeatingPlanSchema = new mongoose.Schema(
       required: true,
     },
 
+    // later can be ref to user
     createdBy: {
       type: String,
       required: true,
-    }, // later can be ref to user
+    },
 
     status: {
       type: String,

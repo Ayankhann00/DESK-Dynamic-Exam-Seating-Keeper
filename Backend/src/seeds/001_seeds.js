@@ -1,5 +1,3 @@
-import mongoose from "mongoose";
-
 import connectDB from "../config/db.js";
 
 import Department from "../models/departments.models.js";
@@ -35,9 +33,9 @@ const runSeed = async () => {
     });
 
     await Student.create([
-      { semester: sem1._id, rollNo: "CS101-001", fullName: "Alice" },
-      { semester: sem1._id, rollNo: "CS101-002", fullName: "Bob" },
-      { semester: sem2._id, rollNo: "CS102-001", fullName: "Charlie" },
+      { semester: sem1._id, rollNo: "CS101-001", fullName: "Ahmed" },
+      { semester: sem1._id, rollNo: "CS101-002", fullName: "Ayaan" },
+      { semester: sem2._id, rollNo: "CS102-001", fullName: "Hamza" },
     ]);
 
     await Room.create({
